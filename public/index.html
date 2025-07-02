@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socket.IO Chat</title>
+</head>
+    <link rel="stylesheet" href="index.css">
+<body>
+    <h2>Lets Chat Guys</h2>
+    
+    <div>
+      <!-- <input type="text" id="room" placeholder="Enter Room"> -->
+      <input type="text" id="username" placeholder="Your name">
+      <button type="submit" onclick="handleRegisterBtn()">Join</button>
+    </div>
+
+    <div>
+      <input type="text"  id="message" placeholder="Your message">
+      <button type="submit" onclick="handleSendBtn()">Send</button>
+    </div>  
+
+    <div class="message-box"></div>
+</body>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="client.js"></script>
+</html>
